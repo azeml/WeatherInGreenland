@@ -14,6 +14,7 @@
 		117710191B6B589E00286745 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117710181B6B589E00286745 /* Images.xcassets */; };
 		1177101C1B6B589E00286745 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1177101A1B6B589E00286745 /* LaunchScreen.xib */; };
 		117710281B6B589E00286745 /* WeatherInGreenlandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117710271B6B589E00286745 /* WeatherInGreenlandTests.m */; };
+		117710331B6B5A1500286745 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 117710321B6B5A1500286745 /* YQL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		117710211B6B589E00286745 /* WeatherInGreenlandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherInGreenlandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117710261B6B589E00286745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117710271B6B589E00286745 /* WeatherInGreenlandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherInGreenlandTests.m; sourceTree = "<group>"; };
+		117710311B6B5A1500286745 /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
+		117710321B6B5A1500286745 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				117710101B6B589E00286745 /* AppDelegate.m */,
 				117710121B6B589E00286745 /* ViewController.h */,
 				117710131B6B589E00286745 /* ViewController.m */,
+				117710311B6B5A1500286745 /* YQL.h */,
+				117710321B6B5A1500286745 /* YQL.m */,
 				117710151B6B589E00286745 /* Main.storyboard */,
 				117710181B6B589E00286745 /* Images.xcassets */,
 				1177101A1B6B589E00286745 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				117710141B6B589E00286745 /* ViewController.m in Sources */,
 				117710111B6B589E00286745 /* AppDelegate.m in Sources */,
+				117710331B6B5A1500286745 /* YQL.m in Sources */,
 				1177100E1B6B589E00286745 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
