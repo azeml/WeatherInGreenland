@@ -17,7 +17,11 @@
 #define SUNRISE_PATH        @"query.results.channel.astronomy.sunrise"
 #define SUNSET_PATH         @"query.results.channel.astronomy.sunset"
 
-@interface ViewController () <UIWebViewDelegate>
+#define MAX_TITLE_TOP_SPACE 50
+
+@interface ViewController () <UIWebViewDelegate, UIScrollViewDelegate>
+
+@property (nonatomic, assign) CGPoint prevOffset;
 
 @end
 
@@ -73,6 +77,10 @@
                          self.sunsetLabel.frame = sunsetFrame;
                      }
                      completion:^(BOOL finished){}];
+    
+    // hook on scroll events
+    self.forecastWebView.scrollView.delegate = self;
+    self.prevOffset = self.forecastWebView.scrollView.contentOffset;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +97,25 @@
         return NO;
     }
     return YES;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.frame.size.height <= scrollView.contentSize.height) {
+        CGFloat h = self.sunriseSunsetHeightConstraint.constant - scrollView.contentOffset.y / 2;
+        self.sunriseSunsetView.alpha = self.titleTopSpaceConstraint.constant * 3 / MAX_TITLE_TOP_SPACE - 2;
+        if (h < 0) {
+            return;
+        }
+        else if (h > MAX_TITLE_TOP_SPACE) {
+            return;
+        }
+        self.titleTopSpaceConstraint.constant = h;
+        self.sunriseSunsetHeightConstraint.constant = h;
+        scrollView.contentOffset = self.prevOffset;
+        self.prevOffset = scrollView.contentOffset;
+    }
 }
 
 @end

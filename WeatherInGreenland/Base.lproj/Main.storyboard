@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T44-Qz-m8Z">
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T44-Qz-m8Z">
                                 <rect key="frame" x="0.0" y="144" width="600" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -27,28 +28,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bj-Nr-yLW" userLabel="title">
                                 <rect key="frame" x="16" y="70" width="568" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkE-Vk-RfP" userLabel="condition">
                                 <rect key="frame" x="16" y="78" width="568" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-za-s08" userLabel="temperature">
                                 <rect key="frame" x="16" y="86" width="568" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9QW-vL-kcS" userLabel="SunriseSunsetView">
                                 <rect key="frame" x="0.0" y="94" width="600" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sunrise time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-in-PCa" userLabel="sunriseTime">
-                                        <rect key="frame" x="150" y="8" width="73" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="sunrise time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-in-PCa" userLabel="sunriseTime">
+                                        <rect key="frame" x="150" y="9" width="73" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="216.5" y="8" width="73" height="16"/>
@@ -57,11 +58,14 @@
                                             <rect key="frame" x="83.5" y="8" width="73" height="16"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sunset time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c5-63-Xbl" userLabel="sunsetTime">
-                                        <rect key="frame" x="381" y="8" width="69.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="sunset time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c5-63-Xbl" userLabel="sunsetTime">
+                                        <rect key="frame" x="381" y="8" width="70" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="381" y="8" width="70" height="16"/>
+                                        </variation>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="514" y="8" width="69.5" height="16"/>
                                         </variation>
@@ -69,10 +73,10 @@
                                             <rect key="frame" x="247.5" y="8" width="69.5" height="16"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcj-mP-JuR" userLabel="sunriseLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcj-mP-JuR" userLabel="sunriseLabel">
                                         <rect key="frame" x="150" y="24" width="73" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="24" width="45.5" height="16"/>
@@ -81,11 +85,14 @@
                                             <rect key="frame" x="0.0" y="24" width="45.5" height="16"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-ny-JA1" userLabel="sunsetLabel">
-                                        <rect key="frame" x="381" y="24" width="69.5" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-ny-JA1" userLabel="sunsetLabel">
+                                        <rect key="frame" x="381" y="24" width="70" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="381" y="24" width="70" height="16"/>
+                                        </variation>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="24" width="42" height="16"/>
                                         </variation>
@@ -111,8 +118,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="75.5" height="80"/>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGW-AN-5Dd" userLabel="Spacer2">
-                                        <rect key="frame" x="231" y="0.0" width="142" height="80"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGW-AN-5Dd" userLabel="Spacer2">
+                                        <rect key="frame" x="231" y="0.0" width="142" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="297.5" y="0.0" width="208.5" height="80"/>
@@ -121,9 +128,12 @@
                                             <rect key="frame" x="164.5" y="0.0" width="75.5" height="80"/>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-Ww-rQV" userLabel="Spacer3">
-                                        <rect key="frame" x="458.5" y="0.0" width="141.5" height="80"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-Ww-rQV" userLabel="Spacer3">
+                                        <rect key="frame" x="458" y="0.0" width="142" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="459" y="0.0" width="142" height="80"/>
+                                        </variation>
                                         <variation key="widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="591.5" y="0.0" width="208.5" height="80"/>
                                         </variation>
@@ -132,9 +142,8 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="7c5-63-Xbl" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="top" constant="8" id="1r9-0S-KNK"/>
                                     <constraint firstItem="yGW-AN-5Dd" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="top" id="389-nF-XKd"/>
                                     <constraint firstAttribute="height" constant="50" id="3Ky-2p-PLz"/>
                                     <constraint firstItem="Lcy-TQ-o1y" firstAttribute="width" secondItem="yGW-AN-5Dd" secondAttribute="width" id="ABS-Ut-jQF"/>
@@ -143,11 +152,12 @@
                                     <constraint firstItem="Wcj-mP-JuR" firstAttribute="top" secondItem="JJ8-in-PCa" secondAttribute="bottom" id="JOJ-IC-AAW"/>
                                     <constraint firstItem="JJ8-in-PCa" firstAttribute="leading" secondItem="Wcj-mP-JuR" secondAttribute="leading" id="KnI-wX-RXZ"/>
                                     <constraint firstAttribute="height" secondItem="yGW-AN-5Dd" secondAttribute="height" id="LDe-6b-P8c"/>
+                                    <constraint firstItem="JJ8-in-PCa" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="top" constant="4" id="Msj-4D-Vgc"/>
                                     <constraint firstItem="EUg-ny-JA1" firstAttribute="top" secondItem="7c5-63-Xbl" secondAttribute="bottom" id="QuK-vp-s01"/>
                                     <constraint firstItem="Lcy-TQ-o1y" firstAttribute="height" secondItem="yGW-AN-5Dd" secondAttribute="height" id="TAG-fO-gME"/>
                                     <constraint firstItem="z4R-Ww-rQV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7c5-63-Xbl" secondAttribute="trailing" constant="8" id="Uwd-gM-a5f"/>
                                     <constraint firstItem="JJ8-in-PCa" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Lcy-TQ-o1y" secondAttribute="trailing" constant="8" id="V1R-3a-t6c"/>
-                                    <constraint firstItem="JJ8-in-PCa" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="top" constant="8" id="XEY-vo-e3a"/>
+                                    <constraint firstItem="JJ8-in-PCa" firstAttribute="top" secondItem="7c5-63-Xbl" secondAttribute="top" id="ZrY-mr-PMb"/>
                                     <constraint firstItem="Lcy-TQ-o1y" firstAttribute="leading" secondItem="9QW-vL-kcS" secondAttribute="leading" id="aEK-Ay-Ufb"/>
                                     <constraint firstItem="7c5-63-Xbl" firstAttribute="leading" secondItem="EUg-ny-JA1" secondAttribute="leading" id="bEV-HR-8Yh"/>
                                     <constraint firstItem="Lcy-TQ-o1y" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="top" id="c9q-nP-szr"/>
@@ -187,8 +197,8 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <exclude reference="0WR-z7-lBS"/>
                                 <include reference="yrC-MF-Dyz"/>
+                                <exclude reference="0WR-z7-lBS"/>
                             </mask>
                         </variation>
                     </view>
@@ -196,12 +206,14 @@
                         <outlet property="conditionLabel" destination="nkE-Vk-RfP" id="aXv-fm-453"/>
                         <outlet property="forecastWebView" destination="T44-Qz-m8Z" id="eaO-z6-oP7"/>
                         <outlet property="sunriseLabel" destination="Wcj-mP-JuR" id="Bft-tK-xPd"/>
+                        <outlet property="sunriseSunsetHeightConstraint" destination="3Ky-2p-PLz" id="cSJ-sI-GgN"/>
                         <outlet property="sunriseSunsetView" destination="9QW-vL-kcS" id="i2q-hF-U7f"/>
                         <outlet property="sunriseTimeLabel" destination="JJ8-in-PCa" id="nxf-DJ-Y2U"/>
                         <outlet property="sunsetLabel" destination="EUg-ny-JA1" id="tvt-E4-KPP"/>
                         <outlet property="sunsetTimeLabel" destination="7c5-63-Xbl" id="08i-Dv-TS7"/>
                         <outlet property="temperatureLabel" destination="RK0-za-s08" id="h9K-mh-PuL"/>
                         <outlet property="titleLabel" destination="5bj-Nr-yLW" id="ULH-gS-ASc"/>
+                        <outlet property="titleTopSpaceConstraint" destination="0WR-z7-lBS" id="gC0-ug-Dxf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

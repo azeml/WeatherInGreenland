@@ -22,6 +22,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *sunsetTimeLabel;
 @property (nonatomic, strong) IBOutlet UILabel *sunsetLabel;
 @property (nonatomic, strong) IBOutlet UIWebView *forecastWebView;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint *titleTopSpaceConstraint;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint *sunriseSunsetHeightConstraint;
 
 @end
 
