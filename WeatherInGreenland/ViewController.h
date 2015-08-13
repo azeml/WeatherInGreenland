@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) YQL *yql;
+@property (strong, nonatomic) NSDictionary *yqlResults;
 
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (nonatomic, strong) IBOutlet UILabel *conditionLabel;
@@ -25,5 +26,12 @@
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *titleTopSpaceConstraint;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *sunriseSunsetHeightConstraint;
 
+@property (nonatomic, strong) IBOutlet UIView *conditionsBG;
+
 @end
 
+@interface ViewController(Animations)
+
+- (void)addClouds;
+
+@end

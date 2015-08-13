@@ -18,9 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUy-wh-2LH" userLabel="ConditionsBG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T44-Qz-m8Z">
                                 <rect key="frame" x="0.0" y="144" width="600" height="456"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="yQS-UU-YMP"/>
                                 </connections>
@@ -175,6 +179,7 @@
                             <constraint firstItem="5bj-Nr-yLW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="0WR-z7-lBS"/>
                             <constraint firstItem="nkE-Vk-RfP" firstAttribute="top" secondItem="5bj-Nr-yLW" secondAttribute="bottom" constant="8" id="4Xc-64-i8I"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="T44-Qz-m8Z" secondAttribute="bottom" id="CE8-oC-zj9"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JUy-wh-2LH" secondAttribute="bottom" id="DNp-Dx-2ga"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T44-Qz-m8Z" secondAttribute="trailing" constant="-16" id="NQ2-cY-9Hl"/>
                             <constraint firstItem="nkE-Vk-RfP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RYw-Ie-Rqj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RK0-za-s08" secondAttribute="trailing" id="Sjt-Dc-QEJ"/>
@@ -182,11 +187,14 @@
                             <constraint firstItem="9QW-vL-kcS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="VVm-l2-gfZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9QW-vL-kcS" secondAttribute="trailing" constant="-16" id="XAb-j5-69n"/>
                             <constraint firstItem="T44-Qz-m8Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="XbG-aJ-dMQ"/>
+                            <constraint firstItem="JUy-wh-2LH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="cg7-Ra-DLO"/>
                             <constraint firstItem="RK0-za-s08" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mLV-m3-xCI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5bj-Nr-yLW" secondAttribute="trailing" id="neF-DV-d1P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nkE-Vk-RfP" secondAttribute="trailing" id="qcR-Nd-5fX"/>
                             <constraint firstItem="9QW-vL-kcS" firstAttribute="top" secondItem="RK0-za-s08" secondAttribute="bottom" constant="8" id="s3v-pu-fpn"/>
                             <constraint firstItem="T44-Qz-m8Z" firstAttribute="top" secondItem="9QW-vL-kcS" secondAttribute="bottom" id="scL-dF-yph"/>
+                            <constraint firstItem="JUy-wh-2LH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="wQx-zU-lo2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JUy-wh-2LH" secondAttribute="trailing" constant="-16" id="y9v-xI-XMz"/>
                             <constraint firstItem="5bj-Nr-yLW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yTl-Gj-PvE"/>
                             <constraint firstItem="jyV-Pf-zRb" firstAttribute="top" secondItem="5bj-Nr-yLW" secondAttribute="top" constant="-10" id="yrC-MF-Dyz"/>
                         </constraints>
@@ -204,6 +212,7 @@
                     </view>
                     <connections>
                         <outlet property="conditionLabel" destination="nkE-Vk-RfP" id="aXv-fm-453"/>
+                        <outlet property="conditionsBG" destination="JUy-wh-2LH" id="W2g-pL-u5n"/>
                         <outlet property="forecastWebView" destination="T44-Qz-m8Z" id="eaO-z6-oP7"/>
                         <outlet property="sunriseLabel" destination="Wcj-mP-JuR" id="Bft-tK-xPd"/>
                         <outlet property="sunriseSunsetHeightConstraint" destination="3Ky-2p-PLz" id="cSJ-sI-GgN"/>
